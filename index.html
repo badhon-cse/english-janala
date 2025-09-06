@@ -34,5 +34,85 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="navbar bg-base-100 shadow-sm">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <a href="" class="">
+                <i class="fa-solid fa-circle-question"></i>FAQ
+              </a>
+              <a href="" class="">
+                <i class="fa-solid fa-book-open"></i>Learn
+              </a>
+              <a href="" class="">
+                <i class="fa-solid fa-right-from-bracket"></i>Logout
+              </a>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">
+            <span>English</span>
+            <img src="./assets/logo.png" alt="" />
+            <span class="bangla-font">জানালা</span>
+          </a>
+        </div>
+        <div class="navbar-end hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 space-x-4">
+            <a href="" class="btn btn-outline btn-primary">
+              <i class="fa-solid fa-circle-question"></i>FAQ
+            </a>
+            <a href="" class="btn btn-outline btn-primary">
+              <i class="fa-solid fa-book-open"></i>Learn
+            </a>
+            <a href="" class="btn btn-outline btn-primary">
+              <i class="fa-solid fa-right-from-bracket"></i>Logout
+            </a>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section
+      class="banner flex flex-col-reverse md:flex-row justify-between md:gap-64 w-10/12 mx-auto items-center"
+    >
+      <div class="banner-content flex-1 text-center md:text-left">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">
+          <span class="text-sky-500">English</span> is easy!!
+        </h1>
+        <p class="text-md md:text-2xl font-medium mb-6">
+          আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
+          আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে
+          অন্য একটি Level এ
+        </p>
+        <form class="flex flex-col gap-y-5 mb-5" action="">
+          <input type="text" placeholder="Enter your name" class="input" />
+          <input type="text" placeholder="............." class="input" />
+        </form>
+        <button class="btn btn-primary">Get Started</button>
+      </div>
+
+      <div class="banner-img flex-1 flex justify-end">
+        <img src="./assets/hero-student.png" alt="" />
+      </div>
+    </section>
+  </body>
 </html>
